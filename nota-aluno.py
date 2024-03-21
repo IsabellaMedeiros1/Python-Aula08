@@ -14,8 +14,8 @@ while True:
     print("Nome:          1°      2°      3°        Média Final")
     print(f"{nome:<14}{n1:<8.1f}{n2:<8.1f}{n3:<8.1f}{media:>9.1f}")
     print("Deseja calcular a média de outro estudante? [S/N]?")
-    escolha = input()
-    if escolha == "N":
+    escolha = input().lower()
+    if escolha[0] == "n":
         break
 print("Programa Finalizado")
 
